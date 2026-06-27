@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🚀Space Mission Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<a href="#home" class="logo">🚀 Space Mission Explorer</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#launches-section">Launches</a></li>
+<li><a href="#rockets-section">Rockets</a></li>
+<li><a href="#news-section">News</a></li>
+</ul>
+<button id="themeToggle">🌙</button>
+<div class="menu-btn" id="menuBtn">
+        ☰
+    </div>
+</nav>
+
+<section id="home" class="hero">
+<div class="hero-content">
+<h3>Mission Control For Space Enthusiasts 🛰️</h3>
+<p>
+Track live launches, explore rockets,
+view mission details and stay updated
+with the latest space news.
+</p>
+<a href="#launches-section" class="hero-btn">
+Explore Missions 🚀
+</a>
+</div>
+</section>
+
+<section class="clock-section">
+<div class="clock-box">
+<h3>UTC TIME</h3>
+<p id="utcClock"></p>
+</div>
+<div class="clock-box">
+<h3>LOCAL TIME</h3>
+<p id="localClock"></p>
+</div>
+</section>
+
+<section class="stats-section">
+<div class="stat-card">
+<h2 id="launchCount">0</h2>
+<p>Launches</p>
+</div>
+<div class="stat-card">
+<h2 id="agencyCount">0</h2>
+<p>Agencies</p>
+</div>
+<div class="stat-card">
+<h2 id="locationCount">0</h2>
+<p>Locations</p>
+</div>
+<div class="stat-card">
+<h2 id="rocketCount">0</h2>
+<p>Rockets</p>
+</div>
+</section>
+
+<section id="launches-section">
+<h1 class="section-title">
+🚀 Space Missions
+</h1>
+<div class="search-section">
+<input id="searchInput" type="text" placeholder="Search Launches...">
+</div>
+<div class="launch-toggle">
+<button id="upcomingBtn" class="toggle-btn active">Upcoming</button>
+<button id="previousBtn" class="toggle-btn">Recent</button>
+</div>
+<div id="error" class="error"></div>
+<div id="launchContainer" class="launch-container">
+</div>
+</section>
+
+<section id="rockets-section" class="rocket-section">
+<h2 class="section-title">
+🚀 Rocket Gallery
+</h2>
+<div id="rocketContainer" class="rocket-container">
+</div>
+</section>
+
+<section id="news-section" class="news-section">
+<h2 class="section-title">
+📰 Latest Space News
+</h2>
+<div
+id="newsContainer"
+class="news-container">
+</div>
+</section>
+
+<div id="modal" class="modal">
+<div class="modal-content">
+<span id="closeModal">&times;
+</span>
+<div id="modalBody"></div>
+</div>
+</div>
+
+<footer class="footer">
+<p>🚀 Developed by <span>Kuram Vasini</span> | Space Mission Explorer © 2026</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
